@@ -1,0 +1,6 @@
+{
+  "name": "October 8th — A Birthday Keepsake",
+  "description": "A romantic, pastel scrapbook and photo gallery keepsake with a countdown timer to October 8, 2026 at 12:00 AM IST, protected by a secret passcode.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

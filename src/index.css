@@ -1,0 +1,225 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Fraunces', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  html,
+  body {
+    font-family: var(--font-sans);
+    background-color: #FDFBF9;
+    color: #2D2224;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  h1, h2, h3, h4, .font-serif-display {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+
+  .font-mono-tabular {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Slow, lovely floating background animations using compositor-only properties */
+@keyframes floatSlow {
+  0% {
+    transform: translate3d(0px, 0px, 0) rotate(0deg);
+  }
+  33% {
+    transform: translate3d(14px, -22px, 0) rotate(6deg);
+  }
+  66% {
+    transform: translate3d(-12px, -42px, 0) rotate(-5deg);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0) rotate(0deg);
+  }
+}
+
+@keyframes driftUpward {
+  0% {
+    transform: translate3d(0, 105vh, 0) rotate(0deg) scale(0.9);
+    opacity: 0;
+  }
+  12% {
+    opacity: 0.55;
+  }
+  88% {
+    opacity: 0.55;
+  }
+  100% {
+    transform: translate3d(28px, -15vh, 0) rotate(24deg) scale(1.05);
+    opacity: 0;
+  }
+}
+
+@keyframes celebrationFall {
+  0% {
+    transform: translate3d(0, -12vh, 0) rotate(0deg);
+    opacity: 1;
+  }
+  85% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translate3d(35px, 105vh, 0) rotate(320deg);
+    opacity: 0;
+  }
+}
+
+@keyframes lyricWordPopUp {
+  0% {
+    transform: translate3d(0, 14px, 0) scale(0.95);
+    opacity: 0;
+  }
+  65% {
+    transform: translate3d(0, -2px, 0) scale(1.01);
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes gentleHeartBob {
+  0%, 100% {
+    transform: translate3d(0, 0, 0) rotate(-6deg);
+  }
+  50% {
+    transform: translate3d(0, -3px, 0) rotate(6deg);
+  }
+}
+
+.animate-float-slow {
+  animation: floatSlow 18s ease-in-out infinite;
+  will-change: transform;
+}
+
+.animate-drift-up {
+  animation-name: driftUpward;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  will-change: transform, opacity;
+}
+
+.animate-celebration-fall {
+  animation-name: celebrationFall;
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+  animation-fill-mode: forwards;
+  will-change: transform, opacity;
+}
+
+.animate-lyric-cutesy {
+  animation: lyricWordPopUp 0.65s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  will-change: transform, opacity;
+}
+
+.animate-heart-bob {
+  animation: gentleHeartBob 2.8s ease-in-out infinite;
+  will-change: transform;
+}
+
+@keyframes doodleWiggle {
+  0%, 100% {
+    transform: translate3d(0, 0, 0) rotate(-4deg) scale(1);
+  }
+  50% {
+    transform: translate3d(0, -4px, 0) rotate(5deg) scale(1.04);
+  }
+}
+
+@keyframes doodleFloatSpin {
+  0%, 100% {
+    transform: translate3d(0, 0, 0) rotate(-8deg);
+  }
+  50% {
+    transform: translate3d(2px, -5px, 0) rotate(8deg);
+  }
+}
+
+.animate-doodle-wiggle {
+  animation: doodleWiggle 3.2s ease-in-out infinite;
+  will-change: transform;
+}
+
+.animate-doodle-spin {
+  animation: doodleFloatSpin 4s ease-in-out infinite;
+  will-change: transform;
+}
+
+/* Smooth 3D Card Flip Utilities */
+.flip-card-perspective {
+  perspective: 1200px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.flip-card-inner.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.flip-card-face {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+/* Subtle paper grain & Washi tape texture (no GPU-heavy backdrop-filter) */
+.scrapbook-paper {
+  background-color: #FDFBF9;
+  background-image: radial-gradient(#E8D5DB 0.65px, transparent 0.65px);
+  background-size: 24px 24px;
+}
+
+.washi-tape-pink {
+  background: rgba(251, 207, 232, 0.78);
+  border-left: 1px dashed rgba(219, 39, 119, 0.22);
+  border-right: 1px dashed rgba(219, 39, 119, 0.22);
+}
+
+.washi-tape-lavender {
+  background: rgba(233, 213, 255, 0.78);
+  border-left: 1px dashed rgba(126, 34, 206, 0.2);
+  border-right: 1px dashed rgba(126, 34, 206, 0.2);
+}
+
+.washi-tape-butter {
+  background: rgba(254, 240, 138, 0.78);
+  border-left: 1px dashed rgba(180, 83, 9, 0.2);
+  border-right: 1px dashed rgba(180, 83, 9, 0.2);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-float-slow,
+  .animate-drift-up,
+  .animate-celebration-fall {
+    animation: none !important;
+  }
+}
