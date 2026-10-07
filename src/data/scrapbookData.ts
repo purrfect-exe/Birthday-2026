@@ -29,7 +29,7 @@ export interface TimedLyricLine {
 
 // 1. Set ENABLE_COUNTDOWN_LOCK to false while editing the website,
 //    and set it to true when you are ready for the October 8, 2026 countdown lock!
-export const ENABLE_COUNTDOWN_LOCK: boolean = false;
+export const ENABLE_COUNTDOWN_LOCK: boolean = true;
 
 // 2. Target Birthday Unlock: October 8, 2026 at 12:00 AM IST (UTC+05:30)
 export const TARGET_BIRTHDAY_ISO = '2026-10-08T00:00:00+05:30';
