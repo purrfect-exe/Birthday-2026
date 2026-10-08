@@ -1,8 +1,3 @@
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- */
-
 import React, { useState, useEffect, useCallback } from 'react';
 import { Sparkles, Heart, RotateCcw } from 'lucide-react';
 import { motion } from 'motion/react';
@@ -185,7 +180,29 @@ export default function App() {
 
                     {/* Write your love note below — supports multiple lines & paragraphs automatically */}
                     <p className="text-sm sm:text-base text-[#4A383C] leading-[1.8] sm:leading-[1.9] whitespace-pre-line break-words">
-                      Happiest birthday to youuu my hardworking and strongest woman. I created this website in order to be a backup for the case where I was forced to sleep due to unseen circumstances. I won't write anything in your whatsapp this time because I can paste everything here in just one link to you without having your worried about organizing and filling your storage (who said i don't think about you!). I know it must be really hard for you to accept all this after such a big fight. I am really speechless about it really about how the things escalated and turned out to be like this. Still I hope that you love this gift, I don't really know if it would matter that much now. I'm extremely sorry for all the things which I did intentionally or unintentionally to hurt you. I agree that there is nothing that I can do to redeem for what was done by me. I know now that the paragraph won't even matter to you but if you are reading this, I really wish you haven't met a person like me. If I were a given a chance to clear all your memories about me and our relationship then I would have gladly accepted it so to protect you from me. I know it won't solve anything but its just my opinion that I would accept it without a tiny doubt in my soul. I'm not a superhero or anything and I needn't be in order to protect you from any kind of harm. I wish I could tell you a lot more but I would like to keep this paragraph short in order to not to bore you and prevent you from thinking that whatever I am writing are just mere words. I can't believe you really said that though, but anyway, it had to happen one day or the other, where my words would be weightless and meaningless. More like gibberish. I hope you enjoy your birthday a lot and I give you all my blessings so that you become a successful person unlike me who has a much darker future. This is my last year anyway, more like only 6 months (might be both ways lol!), so you already know at what point I am standing on since it will define my whole future. I wish you for the best for your whole life!
+                     HAPPIEST BIRTHDAY MYY DARLINGG, MY WIFEYY, MY HONEYY, MY SWEETIEE, MY CUTIEE, MY PRINCESS, MY LADYYY, MY QUEEN, MY ONE AND ONLY AND EVERYTHINGGG!!! ❤💞❤💞❤💞❤💞❤💞
+
+Budhhu aapko wish to karke hee jaaunga na. Mai waise surprise karne waala tha, par aap sad baby ho gayi to mujhe rukna pata. Matlab jaana to hai mujhe but maine enough time buy kar liya tha pehle hee. I loveee youuuu the mostttt myyy luckiest and mosttt precious girlfriend. You are my everything, from top to bottom, u are mineeeee. 
+
+Finally aap 18 ki ho gayiiiii!!!!!!!! Btw wo website par mai pehle se kaam kar raha hu to ho sakta hai ki usme kuchh ho jo time ke according thik na baithe. Aur maine countdown bhi lagaya tha website par isliye heee ki exact time par open hooo. 
+
+I just wish youuuu all the luck and pray ki aapko health sabse best raheeee. Aapki saari wishes puri honi chahiye warna mai bhagwaan ji se personally baat karunga 😤😤😤😤😤. 
+
+Btww uuu areee reallyyyy reallyyyyy prettyyyyy 🙈🙈🙈🙈🙈🙈🙈🙈🙈🙈🙈🙈🙈🙈🙈🙈🙈🙈🙈🙈🙈🙈🙈🙈🙈🙈🙈🙈. 
+
+ 
+
+Aapki photo dekhta rehta hu har baar aur kho jaata hu ki meri chhoti si baby, jisko mai coru bolta hu, ab 18 years ki ho gayiiii. Bohot weird hai mere liye, I mean amazing way mae. Ofc I will always celebrate your birthday with uuu forever and alwaysss. There's no one who can stop meeeeee. I can do anything for you just to make u smileee. Hu na mai pagal aapke liye~
+
+Hamaari jitni bhi fights ho, end mae I will still and always choose u, no because, no reasons. I need only you than any reasons. You are a pretty soul, human, goddess and angel. No one can be like youuuu. So HAPPY BIRTHDAY TOOO YOUUUUU :DDDDDD 🎉🎉🎉🎉🎉🎉🎉🎉🎉
+
+ 
+
+Btw party when 🥺🥺🥺
+
+Mai aapka partner hu to ye matlab nahi mujhe party nahi milegi 😤. Ab chalo ye raha aapka cute sa 🎂. Blow the candlee and ask for your wishhh. I know already shaayad ki kya wish hogiii, and I will try my best to make it come trueeeee. Abki baar ke gifts thode kam hai, I'm sorry :((.
+
+But I really appreciate every atom of u and whatever you do. You are one of an infinity. Thank you for always being there for me, taking care for me and loving me unconditionally. I will always try to show you how much you mean to me and what I really think about you. Ham past to change nahi kar sakte but I want to improve for our future. Thank you once again for all ur trust and affection, I'm very indebted to you forever and always. I LOVEEE YOUUU THE MOSTTTT FOREVER AND ALWAYSSSSS.
                     </p>
 
                     {/* Subtle Letter Sign-Off */}
